@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amirthavarshan .R — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- ===== MOVING BACKGROUND ===== -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="noise-overlay"></div>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav id="navbar">
+    <div class="nav-logo">AR<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#stats" class="nav-link">Stats</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      <span class="toggle-icon sun">☀</span>
+      <span class="toggle-icon moon">◑</span>
+    </button>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-tag reveal" data-delay="0">// Student Developer</div>
+      <h1 class="hero-name reveal" data-delay="100">
+        <span class="line">Amirtha</span><span class="line accent-text">varshan</span><span class="line name-r">.R</span>
+      </h1>
+      <p class="hero-sub reveal" data-delay="300">Information Technology · RMK Engineering College</p>
+      <div class="hero-cta reveal" data-delay="500">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="scroll-indicator reveal" data-delay="700">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hex-ring ring-1"></div>
+      <div class="hex-ring ring-2"></div>
+      <div class="hex-ring ring-3"></div>
+      <div class="avatar-circle">
+        <span>AR</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-tag">// 01 About</div>
+      <h2 class="section-title reveal-fade">Who I Am</h2>
+      <div class="about-grid">
+        <div class="about-text reveal-fade">
+          <p>I'm <strong>Amirthavarshan .R</strong>, an Information Technology student at <strong>R.M.K. Engineering College</strong>, pursuing my degree with a graduation goal of <strong>2029</strong>.</p>
+          <p>I'm passionate about building digital experiences — from clean frontends to robust backends. With 4 months of hands-on experience and 5 projects under my belt, I'm always looking to push the boundary of what I can create.</p>
+          <div class="info-chips">
+            <div class="chip">📅 Pursuing Since 2026</div>
+            <div class="chip">🎓 Graduating 2029</div>
+            <div class="chip">💼 IT Department</div>
+            <div class="chip">🆔 25IT006</div>
+          </div>
+        </div>
+        <div class="about-card reveal-fade">
+          <div class="about-card-inner">
+            <div class="card-label">Current Status</div>
+            <div class="status-badge"><span class="pulse"></span> Active Learner</div>
+            <div class="card-divider"></div>
+            <div class="card-row"><span>College</span><span>RMK Engineering</span></div>
+            <div class="card-row"><span>Dept</span><span>Information Technology</span></div>
+            <div class="card-row"><span>Roll No.</span><span>25IT006</span></div>
+            <div class="card-row"><span>Experience</span><span>4 Months</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section id="stats">
+    <div class="section-inner">
+      <div class="section-tag">// 02 By the Numbers</div>
+      <h2 class="section-title reveal-fade">At a Glance</h2>
+      <div class="stats-grid">
+        <div class="stat-card reveal-fade" data-delay="0">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Projects Completed</div>
+          <div class="stat-bar"><div class="stat-fill" style="--fill:100%"></div></div>
+        </div>
+        <div class="stat-card reveal-fade" data-delay="100">
+          <div class="stat-number" data-target="4">0</div>
+          <div class="stat-label">Months of Experience</div>
+          <div class="stat-bar"><div class="stat-fill" style="--fill:33%"></div></div>
+        </div>
+        <div class="stat-card reveal-fade" data-delay="200">
+          <div class="stat-number" data-target="2026">0</div>
+          <div class="stat-label">Year Started</div>
+          <div class="stat-bar"><div class="stat-fill" style="--fill:75%"></div></div>
+        </div>
+        <div class="stat-card reveal-fade" data-delay="300">
+          <div class="stat-number" data-target="2029">0</div>
+          <div class="stat-label">Graduation Year</div>
+          <div class="stat-bar"><div class="stat-fill" style="--fill:25%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-tag">// 03 Projects</div>
+      <h2 class="section-title reveal-fade">My Work</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal-fade" data-delay="0">
+          <div class="project-num">01</div>
+          <div class="project-tag">Web Dev</div>
+          <h3>Project Alpha</h3>
+          <p>A full-stack web application with modern UI and backend integration, demonstrating end-to-end development skills.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span><span>JS</span></div>
+        </div>
+        <div class="project-card reveal-fade" data-delay="100">
+          <div class="project-num">02</div>
+          <div class="project-tag">UI/UX</div>
+          <h3>Project Beta</h3>
+          <p>A responsive design system and component library built for scalability and reusability across projects.</p>
+          <div class="project-stack"><span>React</span><span>CSS</span><span>Figma</span></div>
+        </div>
+        <div class="project-card reveal-fade" data-delay="200">
+          <div class="project-num">03</div>
+          <div class="project-tag">Backend</div>
+          <h3>Project Gamma</h3>
+          <p>RESTful API development with database integration — focusing on data structure and performance.</p>
+          <div class="project-stack"><span>Python</span><span>SQL</span><span>REST</span></div>
+        </div>
+        <div class="project-card reveal-fade" data-delay="300">
+          <div class="project-num">04</div>
+          <div class="project-tag">Data</div>
+          <h3>Project Delta</h3>
+          <p>Data visualization dashboard showcasing analytics and real-time insights with interactive charts.</p>
+          <div class="project-stack"><span>JS</span><span>Chart.js</span><span>API</span></div>
+        </div>
+        <div class="project-card reveal-fade featured" data-delay="400">
+          <div class="project-num">05</div>
+          <div class="project-tag">Full Stack</div>
+          <h3>Project Epsilon</h3>
+          <p>A complete full-stack application combining modern frontend practices with a robust backend and cloud deployment.</p>
+          <div class="project-stack"><span>React</span><span>Node</span><span>Cloud</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-tag">// 04 Contact</div>
+      <h2 class="section-title reveal-fade">Let's Connect</h2>
+      <p class="contact-sub reveal-fade">Open to collaborations, internships, and exciting opportunities.</p>
+      <div class="contact-links reveal-fade">
+        <a href="https://www.linkedin.com/in/amirthavarshan-r-850575389" target="_blank" class="contact-card linkedin">
+          <div class="cc-icon">in</div>
+          <div class="cc-info">
+            <div class="cc-label">LinkedIn</div>
+            <div class="cc-val">amirthavarshan-r</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+        <a href="https://github.com/25it006" target="_blank" class="contact-card github">
+          <div class="cc-icon">gh</div>
+          <div class="cc-info">
+            <div class="cc-label">GitHub</div>
+            <div class="cc-val">25it006</div>
+          </div>
+          <div class="cc-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <span>© 2025 Amirthavarshan .R</span>
+      <span>Built with passion · RMK Engineering College</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
